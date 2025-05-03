@@ -15,7 +15,7 @@ function App() {
       }
 
       const updatedTurns = [
-        { square: { row: rowIndex, col: colIndexs }, player: currentPlayer },
+        { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
         ...prevTurns,
       ];
       return updatedTurns;
