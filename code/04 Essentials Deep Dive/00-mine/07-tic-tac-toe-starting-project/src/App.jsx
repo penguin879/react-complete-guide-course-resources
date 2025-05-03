@@ -22,7 +22,7 @@ function deriveActivePlayer(gameTurns) {
 function App() {
   const [players, setPlayers] = useState({
     X: "Player 1",
-    0: "Player 2",
+    O: "Player 2",
   });
   const [gameTurns, setGameTurns] = useState([]);
   // const [activePlayer, setActivePlayer] = useState("X");
@@ -49,7 +49,7 @@ function App() {
       firstSquareSymbol === secondSquareSymbol &&
       firstSquareSymbol === thirdSquareSymbol
     ) {
-      winner = firstSquareSymbol;
+      winner = players[firstSquareSymbol];
     }
   }
 
