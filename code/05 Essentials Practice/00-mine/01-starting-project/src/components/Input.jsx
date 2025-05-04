@@ -1,4 +1,4 @@
-export default function Input({ title, defaultValue, id }) {
+export default function Input({ title, defaultValue, onChange, valueName }) {
   return (
       <p>
         <label>{title}</label>
@@ -6,6 +6,7 @@ export default function Input({ title, defaultValue, id }) {
           type="number"
           name={title}
           defaultValue={defaultValue}
+          onChange={(event) => onChange(valueName, event.target.value)}
           required
         />
       </p>
