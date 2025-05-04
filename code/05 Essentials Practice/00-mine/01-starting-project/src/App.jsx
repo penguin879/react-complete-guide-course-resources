@@ -10,6 +10,7 @@ function App() {
     duration: 10,
   });
 
+  const inputIsValid = userInput.duration >= 1;
   function handleChange(inputIdentifier, newValue) {
     setUserInput((prevUserInput) => {
       return {
@@ -18,11 +19,13 @@ function App() {
       };
     });
   }
+  
   return (
     <>
       <Header />
       <InputGroup userInput={userInput} handleChange={handleChange} />
-      <Table userInput={userInput}/>
+      {!inputIsValid && <p className="center">Please enter valid input data</p>}
+      {inputIsValid && <Table userInput={userInput}/>}
     </>
   );
 }
