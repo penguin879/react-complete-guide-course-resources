@@ -25,14 +25,14 @@ export default function InputGroup() {
           title="Initial Investment"
           defaultValue={userInput.initialInvestment}
           id="initInvest"
-          onChange={handleChange}
+          handleChange={handleChange}
           valueName={"initialInvestment"}
         />
         <Input
           title="Annual Investment"
           defaultValue={userInput.annualInvestment}
           id="annualInvest"
-          onChange={handleChange}
+          handleChange={handleChange}
           valueName={"annualInvestment"}
         />
       </div>
@@ -41,14 +41,14 @@ export default function InputGroup() {
           title="Expected Return"
           defaultValue={userInput.expectedReturn}
           id="expectReturn"
-          onChange={handleChange}
+          handleChange={handleChange}
           valueName={"expectedReturn"}
         />
         <Input
           title="Duration"
           defaultValue={userInput.duration}
           id="duration"
-          onChange={handleChange}
+          handleChange={handleChange}
           valueName={"duration"}
         />
       </div>
