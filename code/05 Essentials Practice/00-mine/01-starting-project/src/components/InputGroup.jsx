@@ -1,9 +1,7 @@
 import Input from "./Input";
 import { useState } from "react";
 
-export default function InputGroup({userInput, handleChange}) {
-  
-
+export default function InputGroup({ userInput, handleChange }) {
   return (
     <section id="user-input">
       <div className="input-group">

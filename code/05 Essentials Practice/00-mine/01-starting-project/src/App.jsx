@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import InputGroup from "./components/InputGroup";
-
+import Table from "./components/Table";
 function App() {
   const [userInput, setUserInput] = useState({
     initialInvestment: 10000,
@@ -22,6 +22,7 @@ function App() {
     <>
       <Header />
       <InputGroup userInput={userInput} handleChange={handleChange} />
+      <Table userInput={userInput}/>
     </>
   );
 }
