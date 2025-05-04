@@ -1,7 +1,7 @@
 export default function Input({
   title,
   defaultValue,
-  onChange: handleChange,
+  onChangeHandler,
   valueName,
 }) {
   return (
@@ -11,7 +11,7 @@ export default function Input({
         type="number"
         name={title}
         defaultValue={defaultValue}
-        onChange={(event) => handleChange(valueName, event.target.value)}
+        onChange={(event) => onChangeHandler(valueName, event.target.value)}
         required
       />
     </p>
